@@ -1,0 +1,13 @@
+div.back{
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+}
+div.back a{
+  text-decoration: none;
+  color: black;
+}
+button{
+  font-size: 80px;
+  background-color: white;
+}

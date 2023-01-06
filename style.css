@@ -1,0 +1,260 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+body{
+      background-image: url("Pictures/blackwood.jpeg");
+  background-size: cover;
+
+}
+div.flex-column {		 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+color: #dbba66;
+  animation-name: change;
+  animation-duration: 2.1s;
+  position: relative;
+  pointer-events: none;
+  animation-iteration-count: 1;
+  font-size: 130px;
+  font-family: head;
+}
+@keyframes change {
+  from { top:-300px;}
+  to{ top:0px;}
+ 
+ }
+div.flex-row {		 
+    display: grid;
+  place-content: center;
+    flex-direction: column;
+    align-items: center;
+       
+    margin-top: 40px;
+    background-image: url("Pictures/white.jpeg");
+    background-size: cover;
+  background-position: center;
+  height: 317px;
+width:630px;
+
+font-size: 60px;
+  color: #bfa973;
+  margin-left: 240px;
+  
+}
+.flex-row {
+  transition: all 300ms;
+}
+.flex-row:hover div.about{
+  transform: scale(1.1);
+  transform-origin: center;
+  
+}
+  .flex-row div.about{
+  display: block;
+      text-align: center;
+   animation: fade-in 1300ms;
+    font-family: main;
+    pointer-events: none;
+    font-size: 58px;
+  
+}
+  .flex-row div.detail{
+  display: none;
+  animation: fade-in 1300ms;
+}
+  .flex-row.active div.about{
+  display: none;
+  
+}
+  .flex-row.active div.detail{
+  display: block;
+font-size: 29px;
+    padding: 40px;
+      font-family: body;
+    pointer-events: none;
+}
+div.second-row{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+       justify-content: flex-start;
+    margin-top: -80px;
+    background-image: url("Pictures/white.jpeg");
+    background-size: cover;
+  background-position: center;
+    height: 482px;
+width:630px;
+font-size: 80px;
+  color: #bfa973;
+  margin-left: 950px;
+}
+.second-row:hover div.title  {
+  transform: scale(1.1);
+  transform-origin: center; 
+  
+}
+  div.second-row div.title{
+  padding-top: 23px;
+  display: block;
+   text-align: center;
+  font-size: 58px;
+  animation: fade-in 1300ms;
+    font-family: main;
+        margin-top: -43px;
+    pointer-events: none;
+
+}
+  div.second-row div.details{
+  font-size: 20px;
+  
+  display: none;
+  animation: fade-in 1300ms;
+}
+  div.second-row.active div.title{
+  padding-top: 23px;
+  display: none;
+}
+  div.second-row.active div.details{
+  display: block;
+      font-family: body;
+font-size: 29px;
+    padding: 40px;
+    pointer-events: none;
+}
+
+
+@keyframes fade-in{
+  0%{ opacity: 0;}
+  100%{opacity: 1;}
+}
+div.project{
+  justify-content: center;
+  color: #bfa973;
+   
+  
+}
+div.project h1{
+  display: flex;
+  font-family: main;
+  font-size: 80px;
+  place-content: center;
+}
+div.project p{
+  display: flex;
+  
+  font-size: 30px;
+     align-content: center;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+}
+
+div.info{
+  display: flex;
+flex-direction: column;
+align-items: center;
+  padding: 150px;
+  padding-top: 0px;
+    font-family: body;
+}
+a{
+  font-size: 30px;
+  text-decoration: none;
+  color: #bfa973;
+
+}
+div.projectII p{
+  display: flex;
+  
+  font-size: 30px;
+     align-content: center;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+}
+
+div.cover{
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+}
+
+img.new{
+  display: none;
+
+}
+
+img.original{
+  display: block;
+
+}
+
+div.cover.active img.new{
+  display: block;
+
+}
+
+div.cover.active img.original{
+  display: none;
+ 
+}
+
+@font-face{
+  font-family: head;
+  src: url("head.ttf");
+}
+
+@font-face{
+  font-family: main;
+  src: url("main.ttf");
+}
+
+@font-face{
+  font-family: body;
+  src: url("body.ttf");
+}
+
+div {
+  text-align: justify;
+  transition: all 800ms;
+  opacity: 0.2;
+  filter: blur(2px);
+  transform: scaleX(0.1);
+}
+
+div.visible {
+  transition-delay: 100ms;
+  opacity: 1;
+  filter: none;
+  transform: scaleX(1);
+}
+
+div.cover p.imi{
+  display: none;
+
+}
+
+p.org{
+  display: block;
+    margin-top: -400px;
+    margin-right: -200px;
+  font-family: body;
+
+}
+
+div.cover.active p.imi{
+  display: block;
+    margin-right: -214px;
+    font-family: body;
+    margin-top: -40px;
+
+}
+
+div.cover.active p.org{
+  display: none;
+ 
+}
