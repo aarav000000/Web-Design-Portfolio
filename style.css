@@ -19,7 +19,7 @@ color: #dbba66;
   position: relative;
   pointer-events: none;
   animation-iteration-count: 1;
-  font-size: 130px;
+  font-size: 10vw;
   font-family: head;
 }
 @keyframes change {
@@ -33,20 +33,21 @@ div.flex-row {
     flex-direction: column;
     align-items: center;
        
-    margin-top: 40px;
+    
     background-image: url("Pictures/white.jpeg");
     background-size: cover;
   background-position: center;
-  height: 317px;
-width:630px;
+  height: 20vw;
+width:35vw;
 
-font-size: 60px;
+font-size: 3vw;
   color: #bfa973;
-  margin-left: 240px;
   
+  grid-area: about;
 }
 .flex-row {
   transition: all 300ms;
+
 }
 .flex-row:hover div.about{
   transform: scale(1.1);
@@ -59,7 +60,8 @@ font-size: 60px;
    animation: fade-in 1300ms;
     font-family: main;
     pointer-events: none;
-    font-size: 58px;
+    font-size: 3vw;
+    
   
 }
   .flex-row div.detail{
@@ -72,8 +74,8 @@ font-size: 60px;
 }
   .flex-row.active div.detail{
   display: block;
-font-size: 29px;
-    padding: 40px;
+font-size: 1.7vw;
+    padding: 2vw;
       font-family: body;
     pointer-events: none;
 }
@@ -82,15 +84,16 @@ div.second-row{
     flex-direction: column;
     align-items: center;
        justify-content: flex-start;
-    margin-top: -80px;
+    
     background-image: url("Pictures/white.jpeg");
     background-size: cover;
   background-position: center;
-    height: 482px;
-width:630px;
-font-size: 80px;
+    height: 27vw;
+width:40vw;
+
   color: #bfa973;
-  margin-left: 950px;
+  
+  grid-area: web;
 }
 .second-row:hover div.title  {
   transform: scale(1.1);
@@ -98,31 +101,31 @@ font-size: 80px;
   
 }
   div.second-row div.title{
-  padding-top: 23px;
+padding-top: 4vw;
   display: block;
    text-align: center;
-  font-size: 58px;
+  font-size: 3vw;
   animation: fade-in 1300ms;
     font-family: main;
-        margin-top: -43px;
+       
     pointer-events: none;
 
 }
   div.second-row div.details{
-  font-size: 20px;
+  font-size: 3vw;
   
   display: none;
   animation: fade-in 1300ms;
 }
   div.second-row.active div.title{
-  padding-top: 23px;
+  
   display: none;
 }
   div.second-row.active div.details{
   display: block;
       font-family: body;
-font-size: 29px;
-    padding: 40px;
+font-size: 1.7vw;
+    padding: 2vw;
     pointer-events: none;
 }
 
@@ -140,13 +143,13 @@ div.project{
 div.project h1{
   display: flex;
   font-family: main;
-  font-size: 80px;
+  font-size: 10vw;
   place-content: center;
 }
 div.project p{
   display: flex;
   
-  font-size: 30px;
+      font-size: 3vw;
      align-content: center;
   align-items: center;
   justify-content: center;
@@ -157,9 +160,10 @@ div.info{
   display: flex;
 flex-direction: column;
 align-items: center;
-  padding: 150px;
+  padding: 10vw;
   padding-top: 0px;
     font-family: body;
+     
 }
 a{
   font-size: 30px;
@@ -170,7 +174,7 @@ a{
 div.projectII p{
   display: flex;
   
-  font-size: 30px;
+  font-size: 3vw;
      align-content: center;
   align-items: center;
   justify-content: center;
@@ -179,8 +183,9 @@ div.projectII p{
 
 div.cover{
     display: flex;
-    flex-direction: row;
-  justify-content: center;
+    flex-direction: column;
+  align-items: center;
+  font-size: ;
 }
 
 img.new{
@@ -238,23 +243,29 @@ div.cover p.imi{
 
 }
 
-p.org{
+div.cover p.org{
   display: block;
-    margin-top: -400px;
-    margin-right: -200px;
+    font-size: 6vw;
   font-family: body;
 
 }
 
 div.cover.active p.imi{
   display: block;
-    margin-right: -214px;
+       font-size: 6vw;
     font-family: body;
-    margin-top: -40px;
 
 }
 
 div.cover.active p.org{
   display: none;
  
+}
+.grid{
+  display: grid;
+      padding-top: 5vw;
+  grid-template-areas:
+    "gap3 about gap gap4"
+    "blnk about web blnk2"
+    "gap5 gap2 web gap7";
 }
